@@ -1,0 +1,12 @@
+<div *ngFor="let image of generatedImages; let i = index">
+    <img
+      [src]="image"
+      alt="Generated Image"
+      (click)="onClick(image)"
+      [style.top]="imagePositions[i].top"
+      [style.left]="imagePositions[i].left"
+      style="width: 100px; height: auto; position:fixed;"
+      
+    />
+  </div>
+  
